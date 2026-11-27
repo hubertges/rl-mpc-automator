@@ -1,0 +1,38 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "RL+MPC Home Automator Setup",
+        "description": "Local online-learning assistant discovering household habits and proposing automations via Android Companion notifications.",
+        "data": {
+          "notify_service": "Default Android Companion notify service",
+          "allow_physical_actions": "Include local physical switches (no user_id and no automation parent)",
+          "min_occurrences": "Minimum repetitions before asking",
+          "ucb_alpha": "RL exploration parameter (LinUCB alpha)",
+          "min_cooldown_minutes": "Minimum cooldown between questions (minutes)",
+          "max_questions_per_day": "Maximum questions per day",
+          "excluded_entities": "Excluded entities"
+        }
+      }
+    },
+    "abort": {
+      "already_configured": "RL+MPC Home Automator is already configured."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "RL+MPC Home Automator Options",
+        "data": {
+          "notify_service": "Default Android Companion notify service",
+          "allow_physical_actions": "Include local physical switches (no user_id and no automation parent)",
+          "min_occurrences": "Minimum repetitions before asking",
+          "ucb_alpha": "RL exploration parameter (LinUCB alpha)",
+          "min_cooldown_minutes": "Minimum cooldown between questions (minutes)",
+          "max_questions_per_day": "Maximum questions per day",
+          "excluded_entities": "Excluded entities"
+        }
+      }
+    }
+  }
+}

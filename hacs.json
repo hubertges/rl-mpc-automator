@@ -1,0 +1,5 @@
+{
+  "name": "RL+MPC Domowy Automatyzator",
+  "homeassistant": "2024.4.0",
+  "render_readme": true
+}

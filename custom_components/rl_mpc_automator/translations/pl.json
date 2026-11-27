@@ -1,0 +1,38 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Konfiguracja RL+MPC Domowy Automatyzator",
+        "description": "Lokalny asystent uczący się nawyków domowników online i proponujący automatyzacje na Androida.",
+        "data": {
+          "notify_service": "Domyślna usługa powiadomień Android Companion",
+          "allow_physical_actions": "Uwzględniaj lokalne przełączniki fizyczne (bez user_id i bez automatyzacji)",
+          "min_occurrences": "Minimalna liczba powtórzeń przed pierwszym pytaniem",
+          "ucb_alpha": "Współczynnik eksploracji RL (LinUCB alpha)",
+          "min_cooldown_minutes": "Minimalny odstęp między pytaniami (minuty)",
+          "max_questions_per_day": "Maksymalna liczba pytań dziennie",
+          "excluded_entities": "Encje wykluczone z obserwacji"
+        }
+      }
+    },
+    "abort": {
+      "already_configured": "Integracja RL+MPC Domowy Automatyzator jest już skonfigurowana."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Opcje RL+MPC Domowy Automatyzator",
+        "data": {
+          "notify_service": "Domyślna usługa powiadomień Android Companion",
+          "allow_physical_actions": "Uwzględniaj lokalne przełączniki fizyczne (bez user_id i bez automatyzacji)",
+          "min_occurrences": "Minimalna liczba powtórzeń przed pierwszym pytaniem",
+          "ucb_alpha": "Współczynnik eksploracji RL (LinUCB alpha)",
+          "min_cooldown_minutes": "Minimalny odstęp między pytaniami (minuty)",
+          "max_questions_per_day": "Maksymalna liczba pytań dziennie",
+          "excluded_entities": "Encje wykluczone z obserwacji"
+        }
+      }
+    }
+  }
+}

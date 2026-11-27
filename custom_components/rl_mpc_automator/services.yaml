@@ -1,0 +1,32 @@
+revoke_automation:
+  name: Wycofaj utworzoną automatyzację
+  description: >-
+    Usuwa natywną automatyzację wygenerowaną przez dodatek z pliku automations.yaml,
+    przeładowuje automatyzacje HA i cofa status automatyzacji dla wybranego wzorca.
+  fields:
+    pattern_id:
+      name: Identyfikator wzorca (pattern_id)
+      description: 12-znakowy skrót wzorca (lub pełne ID automatyzacji z prefiksem rl_mpc_).
+      required: true
+      example: "a1b2c3d4e5f6"
+      selector:
+        text:
+
+reset_pattern:
+  name: Wyzeruj wyuczony wzorzec
+  description: >-
+    Całkowicie usuwa wyuczony wzorzec zachowania z pamięci modelu RL+MPC oraz
+    usuwa powiązaną z nim automatyzację, jeśli istniała.
+  fields:
+    pattern_id:
+      name: Identyfikator wzorca (pattern_id)
+      description: 12-znakowy skrót wzorca widoczny w atrybutach sensora diagnostycznego.
+      required: true
+      example: "a1b2c3d4e5f6"
+      selector:
+        text:
+
+evaluate_now:
+  name: Wymuś ewaluację horyzontu MPC
+  description: >-
+    Natychmiast uruchamia planistę MPC oraz politykę Hybrid LinUCB dla bieżącego stanu domu.

@@ -1,0 +1,20 @@
+{
+  "domain": "rl_mpc_automator",
+  "name": "RL+MPC Domowy Automatyzator",
+  "after_dependencies": [
+    "device_tracker",
+    "mobile_app",
+    "notify",
+    "person",
+    "recorder"
+  ],
+  "codeowners": ["@hubertges"],
+  "config_flow": true,
+  "dependencies": ["automation"],
+  "documentation": "https://github.com/hubertges/rl-mpc-automator",
+  "integration_type": "service",
+  "iot_class": "local_push",
+  "issue_tracker": "https://github.com/hubertges/rl-mpc-automator/issues",
+  "requirements": [],
+  "version": "1.0.0"
+}
